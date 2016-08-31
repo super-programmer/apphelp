@@ -114,11 +114,10 @@ a {
     color: #222;
 	font-size:.24rem;
     width:65%;
-    font-size:.24rem;
     box-sizing:border-box;
 }
 #main > ul > li > strong,#main > ul > li > span{
-    text-indent:0px;
+    text-indent:0;
     border-left: 1px solid #c3cfd9;
 }
 #main > ul > li > i {
