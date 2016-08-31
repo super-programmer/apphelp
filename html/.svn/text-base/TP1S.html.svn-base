@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TC3/TK3添加帮助</title>
+    <title>TP1S添加帮助</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
     <script type="text/javascript" src="../js/rem.js"></script>
     <link href="../css/common.css" type="text/css" rel="stylesheet"/>
@@ -10,27 +10,31 @@
 <body>
 <div id="title">
     <div id="pro-pic">
-        <img src="../img/tc3_front_detail.png"/>
+        <img src="../img/tp1_front_detail.png"/>
 
-        <p>TC3/TK3</p>
+        <p>TP1S</p>
     </div>
     <!--<a href="help.html" id="pro-link">选择其他设备</a>-->
     <input type="button" value="选择其他设备" id="pro-link" class="but_input" onclick="javascript:history.go(-1)"/>
 </div>
 <div id="main">
-    <img src="../img/tc3_front_detail.png">
+    <img src="../img/tp1_front_detail.png">
 
-    <p class="detail-p">长按配对键直至绿灯闪烁</p>
+    <p class="detail-p">待设备通电后至绿灯闪烁</p>
     <ul>
         <li>指示灯状态</li>
-        <li><i>指示灯熄灭</i><strong>设备恢复默认启动</strong></li>
-        <li><i>红灯常亮</i><strong>启动中、设备故障，无法启动</strong></li>
-        <li><i>绿灯常亮</i><strong>设备正常工作</strong></li>
-        <li><i>红绿交替</i><strong>升级</strong></li>
-        <li><i>红灯慢闪</i><strong>设备已配置WIFI，还未连接到网络</strong></li>
-        <li><i>SD卡故障</i><strong>红灯快闪</strong></li>
+        <li><i>蓝灯闪烁</i><strong>设备升级中</strong></li>
+        <li><i>绿灯旋转</i><strong>设备等待网络配置</strong></li>
+        <li><i>黄灯闪烁</i><strong>设备网络连接失败</strong></li>
+        <li><i>红灯旋转</i><strong>设备故障</strong></li>
+        <li><i>红灯闪烁</i><strong>设备SD卡或配件故障</strong></li>
+        <li><i>指示灯熄灭</i><strong>设备恢复默认重启</strong></li>
     </ul>
     <p class="footer-p">您可以长按Reset键使设备恢复出厂设置</p>
 </div>
 </body>
 </html>
+
+
+
+
