@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #efeff4;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    width: 100%;
+    margin: 20px 0;
+    height: 1.4rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#pro-pic {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+#pro-pic > img {
+    margin-top:0.3rem;
+    margin-left:0.3rem;
+    width: 0.86rem;
+    height: 0.86rem;
+}
+
+#pro-pic > p {
+    position: relative;
+    top: -0.86rem;
+    left: 1.26rem;
+    font-size:0.32rem;
+    color: #626273;
+}
+
+#pro-link {
+    border: none;
+    display: block;
+    position:absolute;
+    right:0.1rem;
+    margin-top: -1.3rem;
+    min-height: 0.6rem;
+    line-height: 0.6rem;
+    background: #4ea7f2;
+    border-radius:0.08rem;
+    text-align: center;
+    color: #fff;
+    padding:0.02rem 0.03rem;
+    font-size: 30px;
+    z-index: 888;
+    -webkit-appearance: none;
+}
+
+#main {
+    border-top: 1px solid #d9d9d9;
+    background: #fff;
+}
+
+#main > img {
+    display: block;
+    margin:0.6rem auto;
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+#main > .detail-p {
+    text-align: cenetr;
+    margin-top: -0.28rem;
+    margin-bottom:0.6rem;
+    font-size:0.32rem;
+    color: #626273;
+    text-align: center;
+}
+
+#main > ul {
+    border: 1px solid #c3cfd9;
+    background: #f2f7fa;
+    font-size: 0.24rem;
+    margin-left: 24px;
+    margin-right: 24px;
+    color: #626273;
+}
+
+#main > ul > li {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    border-bottom: 1px solid #c3cfd9;
+    
+}
+
+#main > ul > li:first-child {
+    background: #ebf0f5;
+    text-align: center;
+}
+
+#main > ul > li > i, #main > ul > li > strong {
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-indent: 16px;
+    color: #222;
+    width:65%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#main > ul > li > i {
+    border-right: 1px solid #c3cfd9;
+    width: 1.8rem;
+}
+
+#main > .footer-p {
+    font-size: 0.12rem;
+    color: #8f8f8f;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+}

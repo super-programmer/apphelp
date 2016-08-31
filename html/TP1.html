@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP1添加帮助</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
+    <script type="text/javascript" src="../js/rem.js"></script>
+    <link href="../css/common.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="title">
+    <div id="pro-pic">
+        <img src="../img/tp1_front_detail.png"/>
+
+        <p>TP1</p>
+    </div>
+    <!--<a href="help.html" id="pro-link">选择其他设备</a>-->
+    <input type="button" value="选择其他设备" id="pro-link" class="but_input" onclick="javascript:history.go(-1)"/>
+</div>
+<div id="main">
+    <img src="../img/tp1_front_detail.png">
+
+    <p class="detail-p">长按配对键直至绿灯闪烁</p>
+    <ul>
+        <li>指示灯状态</li>
+        <li><i>指示灯熄灭</i><strong>设备恢复默认启动</strong></li>
+        <li><i>绿灯闪烁</i><strong>设备受到配对信息，正在连接路由器</strong></li>
+        <li><i>绿灯常亮</i><strong>设备连接路由器成功，正在连接平台</strong></li>
+        <li><i>蓝灯常亮</i><strong>设备联网成功，正常使用</strong></li>
+        <li><i>红灯常亮</i><strong>设备异常或者设备无法连接平台</strong></li>
+    </ul>
+    <p class="footer-p">您可以长按Reset键使设备恢复出厂设置</p>
+</div>
+</body>
+</html>
