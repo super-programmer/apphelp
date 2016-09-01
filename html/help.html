@@ -146,14 +146,20 @@
             $videoLoading.show();
             /*更新播放次数*/
             video.addEventListener("canplaythrough", function() {
+                alert('可以播放了')
                 $videoLoading.hide();
             }, false);
             /*加载失败*/
             video.addEventListener("error", function() {
+                alert('不可以播放了')
                 $videoLoading.hide();
             }, false);
         }, false);
     };
+     video.addEventListener("error", function() {
+                alert('不可以播放了')
+                $videoLoading.hide();
+            }, false);
     initvideo()
 </script>
 </html>
