@@ -123,6 +123,7 @@
     请选择您的设备
 </div>
 <div id="main">
+<div id="videoLoading">错了，加载不出！</div>
 <video  src="http://funchlscdn.lechange.cn/LCL/2G0139CYAK00023/0/0/20160831164456/dev_20160831164456_7qaln75dirnp62ta.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg"></video>
 <video  src="http://cdn.lechange.cn/LCG/2D01A0EPAU02625/0/0/20160816110615_6akt798xkcxxhpmk.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg"></video>
     <ul>
@@ -136,4 +137,23 @@
     </ul>
 </div>
 </body>
+<script>
+    function initvideo(){
+        var $videoLoading=$('#videoLoading')
+        var video=$('video')[0];
+        /*播放开始*/
+        video.addEventListener("play", function () {
+            $videoLoading.show();
+            /*更新播放次数*/
+            video.addEventListener("canplaythrough", function() {
+                $videoLoading.hide();
+            }, false);
+            /*加载失败*/
+            video.addEventListener("error", function() {
+                $videoLoading.hide();
+            }, false);
+        }, false);
+    };
+    initvideo()
+</script>
 </html>
