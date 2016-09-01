@@ -139,8 +139,8 @@
 </body>
 <script>
     function initvideo(){
-        var $videoLoading=$('#videoLoading')
-        var video=$('video')[0];
+        var $videoLoading=document.getElementById('#videoLoading')
+        var video=document.getElementByTagNames('video')[0];
         /*播放开始*/
         video.addEventListener("play", function () {
             $videoLoading.show();
