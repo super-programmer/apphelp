@@ -144,6 +144,7 @@
         /*播放开始*/
         video.addEventListener("play", function () {
             $videoLoading.show();
+            alert('可以播放了')
             /*更新播放次数*/
             video.addEventListener("canplaythrough", function() {
                 alert('可以播放了')
