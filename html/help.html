@@ -202,17 +202,19 @@
           
         c_openId="openId";  
         if (document.cookie.length > 0) {  
-            c_start = document.cookie.indexOf(c_openId + "=");  
-            if (c_start != -1) {  
-                c_start = c_start + c_openId.length + 1;  
-                c_end = document.cookie.indexOf(";", c_start);  
-                if (c_end == -1)  
-                    c_end = document.cookie.length;  
-                openId=unescape(document.cookie.substring(c_start, c_end));//通过截取字符串，获取到openId。  
-                window.location.href = "joinActivity.jsf?openId="+openId+"&activityId="+activityId;//获取openId之//后再跳转到指定页面，把该openId放置到浏览器链接中。然后后台可以随时的从链接中确定是该用户在操作。  
-            }  
+            // c_start = document.cookie.indexOf(c_openId + "=");  
+            // if (c_start != -1) {  
+            //     c_start = c_start + c_openId.length + 1;  
+            //     c_end = document.cookie.indexOf(";", c_start);  
+            //     if (c_end == -1)  
+            //         c_end = document.cookie.length;  
+            //     openId=unescape(document.cookie.substring(c_start, c_end));//通过截取字符串，获取到openId。  
+            //     // window.location.href = "joinActivity.jsf?openId="+openId+"&activityId="+activityId;//获取openId之//后再跳转到指定页面，把该openId放置到浏览器链接中。然后后台可以随时的从链接中确定是该用户在操作。  
+            // }  
         }  
-        window.location.href = "joinActivity.jsf?activityId="+activityId;  
+        alert(document.cookie+url);
+        // window.location.href = "joinActivity.jsf?activityId="+activityId; 
+        // alert(c_start);
     }
     getCookie();
 </script>
