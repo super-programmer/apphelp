@@ -190,32 +190,6 @@
     //             $videoLoading.hide();
     // }, false);
     // initvideo()
-    function getCookie() {  
-         var url = location.search; //获取url中"?"符后的字串  
-           var theRequest = new Object();  
-           if (url.indexOf("?") != -1) {  
-              var str = url.substr(1);  
-              strs = str.split("%26");  
-              theRequest[strs[0].split("=")[0]]=(strs[0].split("=")[1]);  
-           }  
-        activityId=theRequest["activityId"];  
-          
-        c_openId="openId";  
-        if (document.cookie.length > 0) {  
-            // c_start = document.cookie.indexOf(c_openId + "=");  
-            // if (c_start != -1) {  
-            //     c_start = c_start + c_openId.length + 1;  
-            //     c_end = document.cookie.indexOf(";", c_start);  
-            //     if (c_end == -1)  
-            //         c_end = document.cookie.length;  
-            //     openId=unescape(document.cookie.substring(c_start, c_end));//通过截取字符串，获取到openId。  
-            //     // window.location.href = "joinActivity.jsf?openId="+openId+"&activityId="+activityId;//获取openId之//后再跳转到指定页面，把该openId放置到浏览器链接中。然后后台可以随时的从链接中确定是该用户在操作。  
-            // }  
-        }  
-        alert(document.cookie+url);
-        // window.location.href = "joinActivity.jsf?activityId="+activityId; 
-        // alert(c_start);
-    }
-    getCookie();
+    window.location="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8b532e73bc564702&redirect_uri=https%3A%2F%2Fsuper-programmer.github.io%2Fapphelp%2Fhtml%3Fhelp.html&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
 </script>
 </html>
