@@ -160,85 +160,33 @@
         <li><h3>没有找到您的设备?</h3><span class="detail_span">如果列表中没有您的设备，您可以按照设备说明书进行操作</span></li>
     </ul>
 </div>
-<div class="box">
-    <div class="box1">box1</div>
-    <div class="box2">box2</div>
-</div>
 </body>
 <script>
-    // function initvideo(){
-    //     var $videoLoading=document.getElementById('#videoLoading')
-    //     var video=document.getElementsByTagNames('video')[0];
-    //     /*播放开始*/
-    //     video.addEventListener("play", function () {
-    //         $videoLoading.show();
-    //         alert('可以播放了')
-    //         /*更新播放次数*/
-    //         video.addEventListener("canplaythrough", function() {
-    //             alert('可以播放了')
-    //             $videoLoading.hide();
-    //         }, false);
-    //         /*加载失败*/
-    //         video.addEventListener("error", function() {
-    //             alert('不可以播放了')
-    //             $videoLoading.hide();
-    //         }, false);
-    //     }, false);
-    // };
-    //  video.addEventListener("error", function() {
-    //             alert('不可以播放了')
-    //             $videoLoading.hide();
-    // }, false);
-    // initvideo()
+    function initvideo(){
+        var $videoLoading=document.getElementById('#videoLoading')
+        var video=document.getElementsByTagNames('video')[0];
+        /*播放开始*/
+        video.addEventListener("play", function () {
+            $videoLoading.show();
+            alert('可以播放了')
+            /*更新播放次数*/
+            video.addEventListener("canplaythrough", function() {
+                alert('可以播放了')
+                $videoLoading.hide();
+            }, false);
+            /*加载失败*/
+            video.addEventListener("error", function() {
+                alert('不可以播放了')
+                $videoLoading.hide();
+            }, false);
+        }, false);
+    };
+     video.addEventListener("error", function() {
+                alert('不可以播放了')
+                $videoLoading.hide();
+    }, false);
+    initvideo()
     
-    function get_url(name){
-    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-    var r = window.location.search.substr(1).match(reg);  //获取url中"?"符后的字符串并正则匹配
-    var context = "";
-    if (r != null)
-        context = r[2];
-    reg = null;
-    r = null;
-    return context == null || context == "" || context == "undefined" ? "" : context;
-    }
-//    if(get_url("code").length>0){
-//        window.location="https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx8b532e73bc564702&secret=2450667d3e84a00cb3583c4b14270da0&code="+get_url("code")+"&grant_type=authorization_code"
-//    }else{
-//        window.location="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx8b532e73bc564702&redirect_uri=https%3a%2f%2fsuper-programmer.github.io%2fapphelp%2fhtml%2fhelp.html&response_type=code&scope=snsapi_base&state=123#wechat_redirect"
-//    }
-    function setCookie(name,value,time)
-    {
-        var strsec = getsec(time);
-        var exp = new Date();
-        exp.setTime(exp.getTime() + strsec*1);
-        document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
-    }
-    function getsec(str)
-    {
-        var str1=str.substring(1,str.length)*1;
-        var str2=str.substring(0,1);
-        if (str2=="s")
-        {
-            return str1*1000;
-        }
-        else if (str2=="h")
-        {
-            return str1*60*60*1000;
-        }
-        else if (str2=="d")
-        {
-            return str1*24*60*60*1000;
-        }
-    }
-    function getCookie(name)
-    {
-        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-        if(arr=document.cookie.match(reg))
-            return unescape(arr[2]);
-        else
-            return null;
-    }
-//    setCookie("ss","www","d2");
-    alert(getCookie('ss'));
-  </script>
+   
+</script>
 </html>
