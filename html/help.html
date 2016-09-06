@@ -162,30 +162,30 @@
 </div>
 </body>
 <script>
-        var $videoLoading=document.getElementById('#videoLoading')
+        // var $videoLoading=document.getElementById('#videoLoading')
         var video= document.getElementsByTagName('video')[0]
     function initvideo(){
         /*播放开始*/
         console.info(video)
         video.addEventListener("play", function () {
-            $videoLoading.show();
+            // $videoLoading.show();
             alert('可以播放了')
             /*更新播放次数*/
             video.addEventListener("canplaythrough", function() {
                 alert('可以播放了')
-                $videoLoading.hide();
+                // $videoLoading.hide();
             }, false);
             /*加载失败*/
             video.addEventListener("error", function() {
                 alert('可以播放了')
-                $videoLoading.hide();
+                // $videoLoading.hide();
             }, false);
         }, false);
     };
     initvideo()
     video.addEventListener("error", function() {
                 alert('非init可以播放了')
-                $videoLoading.hide();
+                // $videoLoading.hide();
     }, false);
     
    
