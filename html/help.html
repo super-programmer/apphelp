@@ -175,6 +175,10 @@
                 alert('可以播放了')
                 // $videoLoading.hide();
             }, false);
+            video.addEventListener("canplay", function() {
+                alert('can可以播放了')
+                // $videoLoading.hide();
+            }, false);
             /*加载失败*/
             video.addEventListener("error", function() {
                 alert('出错了')
