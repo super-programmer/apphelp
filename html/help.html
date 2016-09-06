@@ -111,35 +111,6 @@
             text-align: center;
             margin-top:0.4rem;
         }
-        video{
-            width:6.4rem;
-            height:3.2rem;
-            font-size:12px;
-        }
-        .box{
-            width:6.4rem;
-            height:400px;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: row;
-            -moz-flex-direction: row;
-            -ms-flex-direction: row;
-            -o-flex-direction: row;
-            flex-direction: column;
-            -webkit-box-orient: vertical;
-            -moz-box-orient: vertical;
-            box-orient: vertical;
-        }
-        .box1{
-            flex:1;
-            background:red;
-        }
-        .box2{
-            height:40px;
-            font-size:12px;
-            background:#0f0;
-        }
     </style>
 </head>
 <body>
@@ -147,9 +118,6 @@
     请选择您的设备
 </div>
 <div id="main">
-<div id="videoLoading">错了，加载不出！</div>
-<video  src="http://funchlscdn.lechange.cn/LCL/2G0139CYAK00023/0/0/20160831164456/dev_20160831164456_7qaln75dirnp62ta.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg" preload=none></video>
-<video  src="http://cdn.lechange.cn/LCG/2D01A0EPAU02625/0/0/20160816110615_6akt798xkcxxhpmk.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg"></video>
     <ul>
         <li><a href="TP1.html"><p>TP1</p></a></li>
         <li><a href="TP1S.html"><p>TP1S</p></a></li>
@@ -161,45 +129,4 @@
     </ul>
 </div>
 </body>
-<script>
-        // var $videoLoading=document.getElementById('#videoLoading')
-        var video= document.getElementsByTagName('video')[0]
-    function initvideo(){
-        /*播放开始*/
-        console.info(video)
-        video.addEventListener("play", function () {
-            // $videoLoading.show();
-            alert('开始播放')
-            /*更新播放次数*/
-            video.addEventListener("canplaythrough", function() {
-                alert('可以播放了')
-                // $videoLoading.hide();
-            }, false);
-            video.addEventListener("canplay", function() {
-                alert('can可以播放了')
-                // $videoLoading.hide();
-            }, false);
-            video.addEventListener("playing", function() {
-                alert('playing')
-                // $videoLoading.hide();
-            }, false);
-            video.addEventListener("loadeddata", function() {
-                alert('loadeddata')
-                // $videoLoading.hide();
-            }, false);
-            /*加载失败*/
-            video.addEventListener("error", function() {
-                alert('出错了')
-                // $videoLoading.hide();
-            }, false);
-        }, false);
-    };
-    initvideo()
-    video.addEventListener("error", function() {
-                alert('非init可以播放了')
-                // $videoLoading.hide();
-    }, false);
-    
-   
-</script>
 </html>
