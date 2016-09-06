@@ -162,10 +162,11 @@
 </div>
 </body>
 <script>
-    function initvideo(){
         var $videoLoading=document.getElementById('#videoLoading')
-        var video=document.getElementsByTagNames('video')[0];
+        var video= document.getElementsByTagName('video')[0]
+    function initvideo(){
         /*播放开始*/
+        console.info(video)
         video.addEventListener("play", function () {
             $videoLoading.show();
             alert('可以播放了')
@@ -176,16 +177,16 @@
             }, false);
             /*加载失败*/
             video.addEventListener("error", function() {
-                alert('不可以播放了')
+                alert('可以播放了')
                 $videoLoading.hide();
             }, false);
         }, false);
     };
-     video.addEventListener("error", function() {
-                alert('不可以播放了')
+    initvideo()
+    video.addEventListener("error", function() {
+                alert('非init可以播放了')
                 $videoLoading.hide();
     }, false);
-    initvideo()
     
    
 </script>
