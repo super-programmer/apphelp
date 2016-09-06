@@ -148,7 +148,7 @@
 </div>
 <div id="main">
 <div id="videoLoading">错了，加载不出！</div>
-<video  src="http://funchlscdn.lechange.cn/LCL/2G0139CYAK00023/0/0/20160831164456/dev_20160831164456_7qaln75dirnp62ta.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg"></video>
+<video  src="http://funchlscdn.lechange.cn/LCL/2G0139CYAK00023/0/0/20160831164456/dev_20160831164456_7qaln75dirnp62ta.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg" preload=none></video>
 <video  src="http://cdn.lechange.cn/LCG/2D01A0EPAU02625/0/0/20160816110615_6akt798xkcxxhpmk.m3u8" webkit-playsinline controls="controls" poster="img/live_banner_default.jpg"></video>
     <ul>
         <li><a href="TP1.html"><p>TP1</p></a></li>
@@ -177,6 +177,14 @@
             }, false);
             video.addEventListener("canplay", function() {
                 alert('can可以播放了')
+                // $videoLoading.hide();
+            }, false);
+            video.addEventListener("playing", function() {
+                alert('playing')
+                // $videoLoading.hide();
+            }, false);
+            video.addEventListener("loadeddata", function() {
+                alert('loadeddata')
                 // $videoLoading.hide();
             }, false);
             /*加载失败*/
