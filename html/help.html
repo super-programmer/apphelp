@@ -169,7 +169,7 @@
         console.info(video)
         video.addEventListener("play", function () {
             // $videoLoading.show();
-            alert('可以播放了')
+            alert('开始播放')
             /*更新播放次数*/
             video.addEventListener("canplaythrough", function() {
                 alert('可以播放了')
@@ -177,7 +177,7 @@
             }, false);
             /*加载失败*/
             video.addEventListener("error", function() {
-                alert('可以播放了')
+                alert('出错了')
                 // $videoLoading.hide();
             }, false);
         }, false);
