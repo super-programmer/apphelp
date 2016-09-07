@@ -152,10 +152,12 @@
     var btn1=document.getElementById("btn1");
     var btn2=document.getElementById("btn2");
     btn1.onclick=function(){
+        alert("1")
         video1.src=video2.getAttribute('src');
         video1.play();
     }
     btn2.onclick=function(){
+        alert("2")
         video2.src=video1.getAttribute('src');
         video2.play();
     }
