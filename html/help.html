@@ -64,12 +64,12 @@
             display: block;
             width: 100%;
             height: 100%;
-            background: url("../img/tp1_front_detail.png") no-repeat center 0.48rem;
+            background: url("../img/adddevice_step1_tp1.png") no-repeat center 0.48rem;
             background-size: 2rem 2rem;
         }
 
         #main > ul > li:nth-child(2) > a {
-            background-image: url("../img/tp1_front_detail.png");
+            background-image: url("../img/adddevice_step1_tp1.png");
         }
 
         #main > ul > li:nth-child(3) > a {
@@ -88,6 +88,13 @@
             background-image: url("../img/g1_front_detail.png");
         }
 
+        #main > ul > li:nth-child(7) > a {
+            background-image: url("../img/adddevice_step1_tc4.png");
+        }
+
+        #main > ul > li:nth-child(8) > a {
+            background-image: url("../img/adddevice_step1_tf1.png");
+        }
         p {
             font-size:0.28rem;
             color: #626273;
@@ -111,70 +118,6 @@
             text-align: center;
             margin-top:0.4rem;
         }
-        video{
-            width:100%;
-            height:400px;
-        }
-        #btn1,#btn2{
-            font-size:12px;
-            height:80px;
-            width:300px;
-            background:gray;
-        }
-        #btn1{
-            background:blue;
-        }
-        .cubebox{
-            position:relative;
-            height:400px;
-            width:400px;
-            /*-webkit-perspective:400px;*/
-            -webkit-transform-style:preserve-3d;
-            transform:rotate3d(1,1,0,30deg);
-            -webkit-transform:rotate3d(1,1,0,30deg); 
-            -moz-transform:rotate3d(1,1,0,30deg);
-            
-        }
-        .cube{
-            position:absolute;
-        }
-        .cube img{
-            dispaly:block;
-            height:400px;
-            width:400px;
-        }
-        #first1{
-            left:-200px;
-            transform:rotateY(90deg);
-            -webkit-transform:rotateY(90deg); /* Safari and Chrome */
-            -moz-transform:rotateY(90deg); 
-        }
-        #first2{
-            left:200px;
-            transform:rotateY(90deg);
-            -webkit-transform:rotateY(90deg); /* Safari and Chrome */
-            -moz-transform:rotateY(90deg); 
-        }
-        #first3{
-            transform:translateZ(200px);
-            -webkit-transform:translateZ(200px); /* Safari and Chrome */
-            -moz-transform:translateZ(200px);  
-        }
-        #first4{
-            transform:translateZ(-200px);
-            -webkit-transform:translateZ(-200px); /* Safari and Chrome */
-            -moz-transform:translateZ(-200px);  
-        }
-        #first5{
-            transform:rotateX(90deg) translateZ(190px);
-            -webkit-transform:rotateX(90deg) translateZ(190px); /* Safari and Chrome */
-            -moz-transform:rotateX(90deg) translateZ(190px);   
-        }
-        #first6{
-            transform:rotateX(90deg) translateZ(-190px);
-            -webkit-transform:rotateX(90deg) translateZ(-190px); /* Safari and Chrome */
-            -moz-transform:rotateX(90deg) translateZ(-190px);   
-        }
     </style>
 </head>
 <body>
@@ -189,36 +132,10 @@
         <li><a href="TC3.html"><p>TC3/TK3</p></a></li>
         <li><a href="TK1.html"><p>TK1/KW12</p></a></li>
         <li><a href="G1.html"><p>G1</p></a></li>
+        <li><a href="TC4.html"><p>TC4</p></a></li>
+        <li><a href="TF1.html"><p>TF1</p></a></li>
         <li><h3>没有找到您的设备?</h3><span class="detail_span">如果列表中没有您的设备，您可以按照设备说明书进行操作</span></li>
     </ul>
-    <!-- <video src="http://dvlalioss.lechange.cn/LCL/PZC4CW355W00438/0/0/20160906223746/dev_20160906223746_xalx8sfifqkef3h8.m3u8" controls="controls" preload="none" id="video2"></video>
-    <video src="http://dvlalioss.lechange.cn/LCL/DHVSTEST087D018/0/0/20160906223847/dev_20160906223847_8nq5b4mfks09mk1f.m3u8" controls="controls" preload="none" id="video1"></video>
-    <div id="btn1">1</div>
-    <div id="btn2">2</div> -->
-</div>
-<div class="cubebox">
-<div id="first1" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
-<div id="first2" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
-<div id="first3" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
-<div id="first4" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
-<div id="first5" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
-<div id="first6" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
 </div>
 </body>
-<script>
-    // var video1=document.getElementById("video1");
-    // var video2=document.getElementById("video2");
-    // var btn1=document.getElementById("btn1");
-    // var btn2=document.getElementById("btn2");
-    // btn1.onclick=function(){
-    //     alert("1")
-    //     video1.src=video2.getAttribute('src');
-    //     video1.play();
-    // }
-    // btn2.onclick=function(){
-    //     alert("2")
-    //     video2.src=video1.getAttribute('src');
-    //     video2.play();
-    // }
-</script>
 </html>

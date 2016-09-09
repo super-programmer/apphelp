@@ -1,7 +1,7 @@
 10
 
 dir
-561455
+564000
 http://10.6.5.2/svnpl/BASPlatform/HSWX_APP/Web/LCStaticRes/Trunk/shareVideo/public/apphelp/img
 http://10.6.5.2/svnpl/BASPlatform
 
@@ -59,6 +59,34 @@ has-props
 
 
 8176
+
+adddevice_step1_tc4.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+adddevice_step1_tf1.png
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
 
 g1_front_detail.png
 file
@@ -163,6 +191,20 @@ has-props
 5407
 
 Thumbs.db
+file
+0
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+adddevice_step1_tp1.png
 file
 0
 

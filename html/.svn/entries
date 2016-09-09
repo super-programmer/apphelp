@@ -1,7 +1,7 @@
 10
 
 dir
-561455
+564000
 http://10.6.5.2/svnpl/BASPlatform/HSWX_APP/Web/LCStaticRes/Trunk/shareVideo/public/apphelp/html
 http://10.6.5.2/svnpl/BASPlatform
 
@@ -263,4 +263,50 @@ f1edb6879663afa3b4cafc56a1e8f3fc
 
 
 1466
+
+TC4.html
+file
+561457
+
+
+add
+
+b7a06f9176713e8cf1db64d008a9258c
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://10.6.5.2/svnpl/BASPlatform/HSWX_APP/Web/LCStaticRes/Trunk/shareVideo/public/apphelp/html/G1.html
+561457
+
+TF1.html
+file
+561457
+
+
+add
+
+b7a06f9176713e8cf1db64d008a9258c
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://10.6.5.2/svnpl/BASPlatform/HSWX_APP/Web/LCStaticRes/Trunk/shareVideo/public/apphelp/html/G1.html
+561457
 

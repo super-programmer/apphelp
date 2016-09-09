@@ -17,7 +17,7 @@
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
-    /*解决安卓initial-scale缩放兼容性*/
+	/*解决安卓initial-scale缩放兼容性*/
     var phoneWidth = parseInt(window.screen.width);
     var phoneScale = phoneWidth / 640;
     var ua = navigator.userAgent;
