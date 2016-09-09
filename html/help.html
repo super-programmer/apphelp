@@ -124,6 +124,57 @@
         #btn1{
             background:blue;
         }
+        .cubebox{
+            position:relative;
+            height:400px;
+            width:400px;
+            /*-webkit-perspective:400px;*/
+            -webkit-transform-style:preserve-3d;
+            transform:rotate3d(1,1,0,30deg);
+            -webkit-transform:rotate3d(1,1,0,30deg); 
+            -moz-transform:rotate3d(1,1,0,30deg);
+            
+        }
+        .cube{
+            position:absolute;
+        }
+        .cube img{
+            dispaly:block;
+            height:400px;
+            width:400px;
+        }
+        #first1{
+            left:-200px;
+            transform:rotateY(90deg);
+            -webkit-transform:rotateY(90deg); /* Safari and Chrome */
+            -moz-transform:rotateY(90deg); 
+        }
+        #first2{
+            left:200px;
+            transform:rotateY(90deg);
+            -webkit-transform:rotateY(90deg); /* Safari and Chrome */
+            -moz-transform:rotateY(90deg); 
+        }
+        #first3{
+            transform:translateZ(200px);
+            -webkit-transform:translateZ(200px); /* Safari and Chrome */
+            -moz-transform:translateZ(200px);  
+        }
+        #first4{
+            transform:translateZ(-200px);
+            -webkit-transform:translateZ(-200px); /* Safari and Chrome */
+            -moz-transform:translateZ(-200px);  
+        }
+        #first5{
+            transform:rotateX(90deg) translateZ(190px);
+            -webkit-transform:rotateX(90deg) translateZ(190px); /* Safari and Chrome */
+            -moz-transform:rotateX(90deg) translateZ(190px);   
+        }
+        #first6{
+            transform:rotateX(90deg) translateZ(-190px);
+            -webkit-transform:rotateX(90deg) translateZ(-190px); /* Safari and Chrome */
+            -moz-transform:rotateX(90deg) translateZ(-190px);   
+        }
     </style>
 </head>
 <body>
@@ -144,6 +195,14 @@
     <video src="http://dvlalioss.lechange.cn/LCL/DHVSTEST087D018/0/0/20160906223847/dev_20160906223847_8nq5b4mfks09mk1f.m3u8" controls="controls" preload="none" id="video1"></video>
     <div id="btn1">1</div>
     <div id="btn2">2</div> -->
+</div>
+<div class="cubebox">
+<div id="first1" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
+<div id="first2" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
+<div id="first3" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
+<div id="first4" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
+<div id="first5" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
+<div id="first6" class="cube"><img src="http://scimg.jb51.net/allimg/160815/103-160Q509544OC.jpg"></div>
 </div>
 </body>
 <script>
