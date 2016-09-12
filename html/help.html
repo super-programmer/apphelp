@@ -118,10 +118,100 @@
             text-align: center;
             margin-top:0.4rem;
         }
+        
+        .cube{
+            width: 400px;
+            height: 400px;
+            -webkit-perspective: 400px;
+            margin:200px auto 0 auto;
+        }
+
+        .ant{
+            width: 100%;
+            height: 100%;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transform: translate3d(0,0,-200px) rotateY(0deg);
+            -webkit-animation:xuanzhuan 10s infinite linear;
+        }
+
+        .face{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border:1px solid;
+            -webkit-backface-visibility: hidden;
+            /*background-color: #FFF;*/
+            overflow: hidden;
+            z-index: 100;
+        }
+        
+        .nohidden{
+            -webkit-backface-visibility: visible;
+        }
+        .face img{
+            width: 100%;
+            height: 100%;
+
+        }
+        .face-right{
+            -webkit-transform: translate3d(200px , 0 , 0px) rotateY(-90deg);
+        }
+        .face-left{
+            -webkit-transform: translate3d(-200px , 0 , 0px) rotateY(90deg);
+        }
+        .face-in{
+            -webkit-transform: translate3d(0px , 0 , -200px) rotateY(0deg);
+        }
+        .face-out{
+            -webkit-transform: translate3d(0px , 0 , 200px) rotateY(180deg);
+        }
+        .face-bottom{
+            height: 400px;
+            -webkit-transform: translate3d(0px , 0px , 0px) rotateX(90deg);
+        }
+        .face-top{
+            height: 400px;
+            -webkit-transform: translate3d(0px , -200px , 0px) rotateX(-90deg);
+        }
+        
+        .house{
+            position: absolute;
+            height: 200px;
+            z-index: 100;
+        }
+        .tv{
+            -webkit-transform: translate3d(200px , 230px , 300px) rotateY(180deg);
+        }
+        .bed{
+            height: 100px;
+            -webkit-transform: translate3d(550px , 310px , 0px) rotateY(-90deg);
+        }
+
+        .house img{
+            height: 100%;
+        }
+
+        @-webkit-keyframes xuanzhuan{
+            0%{
+                -webkit-transform: translate3d(0,0,-100px) rotateY(0deg);
+            }
+            25%{
+                -webkit-transform: translate3d(0,0,-100px) rotateY(90deg);
+            }
+            50%{
+                -webkit-transform: translate3d(0,0,-100px) rotateY(180deg);
+            }
+            75%{
+                -webkit-transform: translate3d(0,0,-100px) rotateY(270deg);
+            }
+            100%{
+                -webkit-transform: translate3d(0,0,-100px) rotateY(360deg);
+            }
+        }
     </style>
 </head>
 <body>
-<div id="header">
+<!-- <div id="header">
     请选择您的设备
 </div>
 <div id="main">
@@ -136,6 +226,16 @@
         <li><a href="TF1.html"><p>TF1</p></a></li>
         <li><h3>没有找到您的设备?</h3><span class="detail_span">如果列表中没有您的设备，您可以按照设备说明书进行操作</span></li>
     </ul>
-</div>
+</div> -->
+<div class="cube">
+        <div class="ant">
+            <div class="face face-right"><img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt=""></div>
+            <div class="face face-left"><img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt=""></div>
+            <div class="face face-in"><img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt=""></div>
+            <div class="face face-out"><img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt=""></div>
+            <div class="face face-bottom"><img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt=""></div>
+            <div class="face face-top"><img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt=""></div>
+        </div>
+    </div>
 </body>
 </html>
