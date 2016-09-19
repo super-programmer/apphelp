@@ -5,6 +5,7 @@
     <title>css3立方体</title>
     <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
     <script type="text/javascript" src="../js/rem.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=94ieqMiicmnT8hzy0hOiqzng"></script>
     <style type="text/css">
         * {
             margin: 0;
@@ -64,7 +65,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            background: url("../img/adddevice_step1_tp1.png") no-repeat center 0.48rem;
+            background: url("../img/icon24_wx_button1.png") no-repeat center 0.48rem;
             background-size: 2rem 2rem;
         }
 
@@ -213,8 +214,8 @@
 <body>
 <!-- <div id="header">
     请选择您的设备
-</div>
-<div id="main">
+</div> -->
+<!-- <div id="main">
     <ul>
         <li><a href="TP1.html"><p>TP1</p></a></li>
         <li><a href="TP1S.html"><p>TP1S</p></a></li>
@@ -238,4 +239,11 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+    var map = new BMap.Map("allmap");    
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  
+    map.addControl(new BMap.MapTypeControl());   
+    map.setCurrentCity("北京");  
+    map.enableScrollWheelZoom(true);
+</script>
 </html>
