@@ -215,10 +215,13 @@
         video{
             font-size:12px;
         }
+        #firstImg{
+            dispaly:none;
+        }
     </style>
 </head>
 <body>
-<img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt="" >
+<img src="http://img5.imgtn.bdimg.com/it/u=328482670,1838839801&fm=206&gp=0.jpg" alt="" id="firstImg">
 <div id="header">
     请选择您的设备
 </div>
@@ -250,6 +253,7 @@
     </div> -->
 </body>
 <script type="text/javascript">
+    $('#firstImg').attr("src","http://f.hiphotos.baidu.com/zhidao/pic/item/ac6eddc451da81cb84c2aebe5666d01609243198.jpg");
     var video = $("#myVideo");
     var _video = video.get(0);
     $("#myVideo").bind("play", function () {
